@@ -10,33 +10,193 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BridalRouteImport } from './routes/bridal'
+import { Route as CareGuideRouteImport } from './routes/care-guide'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CustomDesignRouteImport } from './routes/custom-design'
+import { Route as ExchangeRepairRouteImport } from './routes/exchange-repair'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GoldRouteImport } from './routes/gold'
+import { Route as PolicyRouteImport } from './routes/policy'
+import { Route as RingsEarringsRouteImport } from './routes/rings-earrings'
+import { Route as SilverRouteImport } from './routes/silver'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BridalRoute = BridalRouteImport.update({
+  id: '/bridal',
+  path: '/bridal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareGuideRoute = CareGuideRouteImport.update({
+  id: '/care-guide',
+  path: '/care-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CustomDesignRoute = CustomDesignRouteImport.update({
+  id: '/custom-design',
+  path: '/custom-design',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExchangeRepairRoute = ExchangeRepairRouteImport.update({
+  id: '/exchange-repair',
+  path: '/exchange-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoldRoute = GoldRouteImport.update({
+  id: '/gold',
+  path: '/gold',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolicyRoute = PolicyRouteImport.update({
+  id: '/policy',
+  path: '/policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RingsEarringsRoute = RingsEarringsRouteImport.update({
+  id: '/rings-earrings',
+  path: '/rings-earrings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SilverRoute = SilverRouteImport.update({
+  id: '/silver',
+  path: '/silver',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bridal': typeof BridalRoute
+  '/care-guide': typeof CareGuideRoute
+  '/contact': typeof ContactRoute
+  '/custom-design': typeof CustomDesignRoute
+  '/exchange-repair': typeof ExchangeRepairRoute
+  '/faq': typeof FaqRoute
+  '/gold': typeof GoldRoute
+  '/policy': typeof PolicyRoute
+  '/rings-earrings': typeof RingsEarringsRoute
+  '/silver': typeof SilverRoute
+  '/testimonials': typeof TestimonialsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bridal': typeof BridalRoute
+  '/care-guide': typeof CareGuideRoute
+  '/contact': typeof ContactRoute
+  '/custom-design': typeof CustomDesignRoute
+  '/exchange-repair': typeof ExchangeRepairRoute
+  '/faq': typeof FaqRoute
+  '/gold': typeof GoldRoute
+  '/policy': typeof PolicyRoute
+  '/rings-earrings': typeof RingsEarringsRoute
+  '/silver': typeof SilverRoute
+  '/testimonials': typeof TestimonialsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bridal': typeof BridalRoute
+  '/care-guide': typeof CareGuideRoute
+  '/contact': typeof ContactRoute
+  '/custom-design': typeof CustomDesignRoute
+  '/exchange-repair': typeof ExchangeRepairRoute
+  '/faq': typeof FaqRoute
+  '/gold': typeof GoldRoute
+  '/policy': typeof PolicyRoute
+  '/rings-earrings': typeof RingsEarringsRoute
+  '/silver': typeof SilverRoute
+  '/testimonials': typeof TestimonialsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/bridal'
+    | '/care-guide'
+    | '/contact'
+    | '/custom-design'
+    | '/exchange-repair'
+    | '/faq'
+    | '/gold'
+    | '/policy'
+    | '/rings-earrings'
+    | '/silver'
+    | '/testimonials'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/bridal'
+    | '/care-guide'
+    | '/contact'
+    | '/custom-design'
+    | '/exchange-repair'
+    | '/faq'
+    | '/gold'
+    | '/policy'
+    | '/rings-earrings'
+    | '/silver'
+    | '/testimonials'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/bridal'
+    | '/care-guide'
+    | '/contact'
+    | '/custom-design'
+    | '/exchange-repair'
+    | '/faq'
+    | '/gold'
+    | '/policy'
+    | '/rings-earrings'
+    | '/silver'
+    | '/testimonials'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BridalRoute: typeof BridalRoute
+  CareGuideRoute: typeof CareGuideRoute
+  ContactRoute: typeof ContactRoute
+  CustomDesignRoute: typeof CustomDesignRoute
+  ExchangeRepairRoute: typeof ExchangeRepairRoute
+  FaqRoute: typeof FaqRoute
+  GoldRoute: typeof GoldRoute
+  PolicyRoute: typeof PolicyRoute
+  RingsEarringsRoute: typeof RingsEarringsRoute
+  SilverRoute: typeof SilverRoute
+  TestimonialsRoute: typeof TestimonialsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +208,107 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bridal': {
+      id: '/bridal'
+      path: '/bridal'
+      fullPath: '/bridal'
+      preLoaderRoute: typeof BridalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/care-guide': {
+      id: '/care-guide'
+      path: '/care-guide'
+      fullPath: '/care-guide'
+      preLoaderRoute: typeof CareGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/custom-design': {
+      id: '/custom-design'
+      path: '/custom-design'
+      fullPath: '/custom-design'
+      preLoaderRoute: typeof CustomDesignRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exchange-repair': {
+      id: '/exchange-repair'
+      path: '/exchange-repair'
+      fullPath: '/exchange-repair'
+      preLoaderRoute: typeof ExchangeRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gold': {
+      id: '/gold'
+      path: '/gold'
+      fullPath: '/gold'
+      preLoaderRoute: typeof GoldRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/policy': {
+      id: '/policy'
+      path: '/policy'
+      fullPath: '/policy'
+      preLoaderRoute: typeof PolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rings-earrings': {
+      id: '/rings-earrings'
+      path: '/rings-earrings'
+      fullPath: '/rings-earrings'
+      preLoaderRoute: typeof RingsEarringsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/silver': {
+      id: '/silver'
+      path: '/silver'
+      fullPath: '/silver'
+      preLoaderRoute: typeof SilverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BridalRoute: BridalRoute,
+  CareGuideRoute: CareGuideRoute,
+  ContactRoute: ContactRoute,
+  CustomDesignRoute: CustomDesignRoute,
+  ExchangeRepairRoute: ExchangeRepairRoute,
+  FaqRoute: FaqRoute,
+  GoldRoute: GoldRoute,
+  PolicyRoute: PolicyRoute,
+  RingsEarringsRoute: RingsEarringsRoute,
+  SilverRoute: SilverRoute,
+  TestimonialsRoute: TestimonialsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
